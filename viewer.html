@@ -26,6 +26,7 @@
         const renderer = new SPLAT.WebGLRenderer(canvas);
         const scene = new SPLAT.Scene();
         const camera = new SPLAT.Camera();
+        camera.position.set(0, 2, 5); // Example: Move up (Y = 2) and back (Z = 5)
         const controls = new SPLAT.OrbitControls(camera, canvas);
 
         async function main() {
